@@ -1,6 +1,5 @@
 const raw = require('../data');
 
-
 const parseData = (raw) => {
     const depthStrings = raw.split('\n');
     return depthStrings.map((depth) => parseInt(depth,0));
