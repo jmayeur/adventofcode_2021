@@ -1,4 +1,3 @@
-
 const raw = require('../testdata');
 
 const parseData = (raw) => {
