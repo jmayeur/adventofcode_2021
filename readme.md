@@ -12,5 +12,5 @@ Ex: >node ./utils/create_day.js "./" "11"
 
 
 Day 12 Notes
-- I've added Github's Co-pilot.  So far it's filled the role of - super autocomplete, and something really cool.  When I was trying to parse through and comment the code from ./08/part2/runner.js - it understood the context well enough to help me generate comments about the relationship between the "digits" from the challenge, the segments and super/subsets.  That was really helpful.  Not only did it understand the solution as fast/faster than I did, it allowed me to comment/explain/comprehend the code much faster than I would on my own.  I'm more than sold
+- I've added Github's Co-pilot.  So far it's filled the role of - super autocomplete, and something really cool.  When I was trying to parse through and comment the code from ./08/part2/runner.js - it understood the context well enough to help me generate comments about the relationship between the "digits" from the challenge, the segments and super/subsets.  That was really helpful.  Not only did it understand the solution as fast/faster than I did, it allowed me to comment/explain/comprehend the code much faster than I would on my own.  I'm more than sold.
 
