@@ -1,14 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 const defaultDataText = 'module.exports = ``;';
-const defaultRunnerText = `
-const raw = require('../testdata');
+const defaultRunnerText = `const raw = require('../testdata');
 
 const parseData = (raw) => {
     const lines = raw.split('\\n');
     return lines[0].split(',').map(v => parseInt(v));
-};
-`;
+};`;
 
 const wrappedDirCreate = (dir) => {
     try {
@@ -56,7 +54,7 @@ const createDataFiles = (workingDir) => {
 
     console.log(`Creating data file ${data}`);
     wrappedFileCreate(data, defaultDataText);
-    
+
 };
 
 const getArgs = (argv) => {
@@ -69,18 +67,15 @@ const getArgs = (argv) => {
 
     return {
         workingDir: args[0],
-        day: args [1]
+        day: args[1]
     }
 };
 
 const args = getArgs(process.argv);
-if(args !== null) {
+if (args !== null) {
     createRootDir(args.day, args.workingDir);
     const dayFolder = path.join(args.workingDir, args.day);
     createDataFiles(dayFolder);
     createPartFolder('1', dayFolder);
     createPartFolder('2', dayFolder);
 }
-
-
-//process.argv
